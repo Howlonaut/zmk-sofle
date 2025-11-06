@@ -2,50 +2,50 @@ layout: {zmk_keyboard: eyelash_sofle}
 layers:
   LAYER0:
   - {t: '[', s: '{'}
-  - {t: '1', h: F1, s: '!'}
-  - {t: '2', h: F2, s: '@'}
-  - {t: '3', h: Sft+F3, s: '#'}
-  - {t: '4', h: F4, s: $}
-  - {t: '5', h: F5, s: '%'}
+  - {t: '1', s: '!'}
+  - {t: '2', s: '@'}
+  - {t: '3', s: '#'}
+  - {t: '4', s: $}
+  - {t: '5', s: '%'}
   - $$mdi:arrow-up-bold$$
-  - {t: '6', h: F6, s: ^}
-  - {t: '7', h: F7, s: '&'}
-  - {t: '8', h: F8, s: '*'}
-  - {t: '9', h: F9, s: (}
-  - {t: '0', h: F10, s: )}
+  - {t: '6', s: ^}
+  - {t: '7', s: '&'}
+  - {t: '8', s: '*'}
+  - {t: '9', s: (}
+  - {t: '0', s: )}
   - {t: '=', s: +}
   - {t: ']', s: '}'}
   - Q
   - W
   - E
-  - {t: R, h: Ctl+H}
-  - {t: T, h: '$$mdi:keyboard-tab$$'}
+  - R
+  - T
   - $$mdi:arrow-down-bold$$
-  - {t: Y, h: Ctl+Y}
+  - Y
   - U
   - I
   - O
   - P
   - {t: '-', s: _}
   - {t: '$$mdi:backspace$$', h: 'Alt+$$mdi:keyboard-tab$$'}
-  - {t: A, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: D, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: F, h: '$$mdi:apple-keyboard-control$$'}
+  - A
+  - S
+  - D
+  - F
   - G
   - $$mdi:arrow-left-bold$$
   - H
-  - {t: J, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: K, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: L, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: ;, h: RIGHT GUI, s: ':'}
+  - J
+  - K
+  - L
+  - {t: ;, s: ':'}
   - {t: '''', s: '"'}
   - Gui+Sft+S
-  - {t: Z, h: Ctl+Z}
-  - {t: X, h: Ctl+X}
-  - {t: C, h: Ctl+C}
-  - {t: V, h: Ctl+V}
-  - {t: B, h: '$$mdi:backspace$$'}
+  - Z
+  - X
+  - C
+  - V
+  - B
   - $$mdi:arrow-right-bold$$
   - N
   - M
@@ -53,8 +53,8 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - {t: \, s: '|'}
+  - {t: LAYER0, h: toggle}
   - {t: Ctl+END, h: Ctl+HOME}
-  - {t: V, h: '$$mdi:apple-keyboard-command$$'}
   - layer1
   - {t: V, h: Sft+Ctl+V}
   - $$mdi:keyboard-space$$
@@ -199,9 +199,9 @@ combos:
 - p: [57, 59]
   k: $$mdi:alpha-w-box$$
   l: [LAYER0]
-- p: [59, 60]
+- p: [54, 53]
   k: {t: layer1, h: toggle}
-- p: [57, 56]
+- p: [63, 62]
   k: {t: '2', h: toggle}
 - p: [56, 60]
   k: {t: LAYER0, h: toggle}
