@@ -47,12 +47,12 @@
 
         Layer_1 {
             bindings = <&to 1>;
-            key-positions = <59 60>;
+            key-positions = <54 53>;
         };
 
         Layer_2 {
             bindings = <&to 2>;
-            key-positions = <57 56>;
+            key-positions = <63 62>;
         };
 
         Layer_0 {
@@ -66,11 +66,11 @@
 
         layer0 {
             bindings = <
-&kp LEFT_BRACKET       &mt F1 N1       &mt F2 N2       &mt LS(F3) N3        &mt F4 N4    &mt F5 N5          &kp UP_ARROW      &mt F6 N6    &mt F7 N7      &mt F8 N8         &mt F9 N9        &mt F10 N0          &kp EQUAL
-&kp RIGHT_BRACKET      &kp Q           &kp W           &kp E                &mt LC(H) R  &mt TAB T          &kp DOWN          &mt LC(Y) Y  &kp U          &kp I             &kp O            &kp P               &kp MINUS
-&mt LA(TAB) BACKSPACE  &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LEFT_SHIFT D     &mt LCTRL F  &kp G              &kp LEFT          &kp H        &mt RCTRL J    &mt LEFT_SHIFT K  &mt RIGHT_ALT L  &mt RIGHT_GUI SEMI  &kp APOSTROPHE
-&kp LG(LS(S))          &mt LC(Z) Z     &mt LC(X) X     &mt LC(C) C          &mt LC(V) V  &mt BACKSPACE B    &kp RIGHT         &kp N        &kp M          &kp COMMA         &kp DOT          &kp FSLH            &kp BACKSLASH
-&mt LC(HOME) LC(END)   &kp LG(V)       &mo 1           &mt LS(LC(V)) LG(V)  &kp SPACE    &kp ENTER          &mt ESCAPE ENTER  &kp DEL      &kp BACKSPACE  &kp ESCAPE        &mo 2            &kp LEFT_GUI
+&kp LEFT_BRACKET       &mt F1 N1             &mt F2 N2       &mt LS(F3) N3        &mt F4 N4    &mt F5 N5          &kp UP_ARROW      &mt F6 N6    &mt F7 N7      &mt F8 N8         &mt F9 N9        &mt F10 N0          &kp EQUAL
+&kp RIGHT_BRACKET      &kp Q                 &kp W           &kp E                &mt LC(H) R  &mt TAB T          &kp DOWN          &mt LC(Y) Y  &kp U          &kp I             &kp O            &kp P               &kp MINUS
+&mt LA(TAB) BACKSPACE  &mt LEFT_GUI A        &mt LEFT_ALT S  &mt LEFT_SHIFT D     &mt LCTRL F  &kp G              &kp LEFT          &kp H        &mt RCTRL J    &mt LEFT_SHIFT K  &mt RIGHT_ALT L  &mt RIGHT_GUI SEMI  &kp APOSTROPHE
+&kp LG(LS(S))          &mt LC(Z) Z           &mt LC(X) X     &mt LC(C) C          &mt LC(V) V  &mt BACKSPACE B    &kp RIGHT         &kp N        &kp M          &kp COMMA         &kp DOT          &kp FSLH            &kp BACKSLASH
+&to 3                  &mt LC(HOME) LC(END)  &mo 1           &mt LS(LC(V)) LG(V)  &kp SPACE    &kp ENTER          &mt ESCAPE ENTER  &kp DEL      &kp BACKSPACE  &kp ESCAPE        &mo 2            &kp LEFT_GUI
             >;
 
             sensor-bindings = <&inc_dec_kp TAB LS(TAB)>;
@@ -100,6 +100,19 @@
             >;
 
             sensor-bindings = <&scroll_encoder>;
+        };
+
+        layer_3 {
+            display-name = "LAYER0";
+            bindings = <
+&kp LEFT_BRACKET       &kp N1                &kp N2  &kp N3               &kp N4     &kp N5       &kp UP_ARROW      &kp N6   &kp N7         &kp N8      &kp N9   &kp N0        &kp EQUAL
+&kp RIGHT_BRACKET      &kp Q                 &kp W   &kp E                &kp R      &kp T        &kp DOWN          &kp Y    &kp U          &kp I       &kp O    &kp P         &kp MINUS
+&mt LA(TAB) BACKSPACE  &kp A                 &kp S   &kp D                &kp F      &kp G        &kp LEFT          &kp H    &kp J          &kp K       &kp L    &kp SEMI      &kp APOSTROPHE
+&kp LG(LS(S))          &kp Z                 &kp X   &kp C                &kp V      &kp B        &kp RIGHT         &kp N    &kp M          &kp COMMA   &kp DOT  &kp FSLH      &kp BACKSLASH
+&to 0                  &mt LC(HOME) LC(END)  &mo 1   &mt LS(LC(V)) LG(V)  &kp SPACE  &kp ENTER    &mt ESCAPE ENTER  &kp DEL  &kp BACKSPACE  &kp ESCAPE  &mo 2    &kp LEFT_GUI
+            >;
+
+            sensor-bindings = <&inc_dec_kp TAB LS(TAB)>;
         };
     };
 };
