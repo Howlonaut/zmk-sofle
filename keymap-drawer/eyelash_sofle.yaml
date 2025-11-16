@@ -2,50 +2,50 @@ layout: {zmk_keyboard: eyelash_sofle}
 layers:
   LAYER0:
   - {t: '[', s: '{'}
-  - {t: '1', s: '!'}
-  - {t: '2', s: '@'}
-  - {t: '3', s: '#'}
-  - {t: '4', s: $}
-  - {t: '5', s: '%'}
+  - {t: '1', h: F1, s: '!'}
+  - {t: '2', h: F2, s: '@'}
+  - {t: '3', h: Sft+F3, s: '#'}
+  - {t: '4', h: F4, s: $}
+  - {t: '5', h: F5, s: '%'}
   - $$mdi:arrow-up-bold$$
-  - {t: '6', s: ^}
-  - {t: '7', s: '&'}
-  - {t: '8', s: '*'}
-  - {t: '9', s: (}
-  - {t: '0', s: )}
+  - {t: '6', h: F6, s: ^}
+  - {t: '7', h: F7, s: '&'}
+  - {t: '8', h: F8, s: '*'}
+  - {t: '9', h: F9, s: (}
+  - {t: '0', h: F10, s: )}
   - {t: '=', s: +}
   - {t: ']', s: '}'}
   - Q
   - W
   - E
-  - R
-  - T
+  - {t: R, h: Ctl+H}
+  - {t: T, h: '$$mdi:keyboard-tab$$'}
   - $$mdi:arrow-down-bold$$
-  - Y
+  - {t: Y, h: Ctl+Y}
   - U
   - I
   - O
   - P
-  - {t: '-', s: _}
-  - {t: '$$mdi:backspace$$', h: 'Alt+$$mdi:keyboard-tab$$'}
-  - A
-  - S
-  - D
-  - F
+  - {t: '-', h: Ctl+Sft+-, s: _}
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: A, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: D, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: F, h: '$$mdi:apple-keyboard-control$$'}
   - G
   - $$mdi:arrow-left-bold$$
   - H
-  - J
-  - K
-  - L
-  - {t: ;, s: ':'}
+  - {t: J, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: K, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: L, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: ;, h: RIGHT GUI, s: ':'}
   - {t: '''', s: '"'}
-  - Gui+Sft+S
-  - Z
-  - X
-  - C
-  - V
-  - B
+  - $$mdi:backspace-reverse-outline$$
+  - {t: Z, h: Ctl+Z}
+  - {t: X, h: Ctl+X}
+  - {t: C, h: Ctl+C}
+  - {t: V, h: Ctl+V}
+  - {t: B, h: '$$mdi:backspace$$'}
   - $$mdi:arrow-right-bold$$
   - N
   - M
@@ -53,19 +53,19 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - {t: \, s: '|'}
-  - {t: LAYER0, h: toggle}
+  - {t: LAYER3, h: toggle}
   - {t: Ctl+END, h: Ctl+HOME}
-  - layer1
-  - {t: V, h: Sft+Ctl+V}
-  - $$mdi:keyboard-space$$
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - LAYER1
+  - {t: Sft+Ctl+V, h: V}
+  - {t: '$$mdi:keyboard-space$$', h: 'Sft+Ctl+$$mdi:keyboard-space$$'}
+  - {t: 'Sft+$$mdi:keyboard-return$$', h: '$$mdi:keyboard-return$$'}
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:keyboard-esc$$'}
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:backspace$$', type: backspace}
-  - $$mdi:keyboard-esc$$
-  - '2'
+  - {t: Sft+Gui+S, h: '$$mdi:keyboard-esc$$'}
+  - LAYER2
   - $$mdi:apple-keyboard-command$$
-  layer1:
+  LAYER1:
   - {t: '`', s: '~'}
   - F1
   - F2
@@ -124,13 +124,13 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: '2', h: toggle}
+  - {t: LAYER2, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  '2':
+  LAYER2:
   - {t: '$$mdi:transfer$$', type: trans}
   - F11
   - F12
@@ -195,13 +195,78 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
+  LAYER3:
+  - {t: '[', s: '{'}
+  - {t: '1', s: '!'}
+  - {t: '2', s: '@'}
+  - {t: '3', s: '#'}
+  - {t: '4', s: $}
+  - {t: '5', s: '%'}
+  - $$mdi:arrow-up-bold$$
+  - {t: '6', s: ^}
+  - {t: '7', s: '&'}
+  - {t: '8', s: '*'}
+  - {t: '9', s: (}
+  - {t: '0', s: )}
+  - {t: '=', s: +}
+  - {t: ']', s: '}'}
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - $$mdi:arrow-down-bold$$
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - {t: '-', s: _}
+  - {t: '$$mdi:backspace$$', h: 'Alt+$$mdi:keyboard-tab$$'}
+  - A
+  - S
+  - D
+  - F
+  - G
+  - $$mdi:arrow-left-bold$$
+  - H
+  - J
+  - K
+  - L
+  - {t: ;, s: ':'}
+  - {t: '''', s: '"'}
+  - Gui+Sft+S
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - $$mdi:arrow-right-bold$$
+  - N
+  - M
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
+  - {t: /, s: '?'}
+  - {t: \, s: '|'}
+  - {t: LAYER0, h: toggle}
+  - {t: Ctl+END, h: Ctl+HOME}
+  - LAYER1
+  - {t: V, h: Sft+Ctl+V}
+  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:keyboard-esc$$'}
+  - $$mdi:backspace-reverse-outline$$
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - $$mdi:keyboard-esc$$
+  - LAYER2
+  - $$mdi:apple-keyboard-command$$
 combos:
 - p: [57, 59]
   k: $$mdi:alpha-w-box$$
   l: [LAYER0]
 - p: [54, 53]
-  k: {t: layer1, h: toggle}
+  k: {t: LAYER1, h: toggle}
 - p: [63, 62]
-  k: {t: '2', h: toggle}
+  k: {t: LAYER2, h: toggle}
 - p: [56, 60]
   k: {t: LAYER0, h: toggle}
