@@ -67,11 +67,11 @@
 
         layer0 {
             bindings = <
-&mt UP_ARROW LBKT     &mt F1 N1       &mt F2 N2             &mt LS(F3) N3        &mt F4 N4                &mt F5 N5              &kp UP_ARROW  &mt F6 N6    &mt F7 N7      &mt F8 N8             &mt F9 N9            &mt F10 N0          &kp EQUAL
-&mt LEFT RBKT         &kp Q           &kp W                 &kp E                &mt LC(H) R              &mt TAB T              &kp DOWN      &mt LC(Y) Y  &kp U          &kp I                 &kp O                &kp P               &mt LC(LS(MINUS)) MINUS
-&mt RIGHT BACKSPACE   &mt LEFT_GUI A  &mt LEFT_ALT S        &mt LEFT_SHIFT D     &mt LCTRL F              &kp G                  &kp LEFT      &kp H        &mt RCTRL J    &mt LEFT_SHIFT K      &mt RIGHT_ALT L      &mt RIGHT_GUI SEMI  &kp APOSTROPHE
-&mt DOWN DEL          &mt LC(Z) Z     &mt LC(X) X           &mt LC(C) C          &mt LC(V) V              &mt BACKSPACE B        &kp RIGHT     &kp N        &kp M          &kp COMMA             &kp DOT              &kp FSLH            &kp BACKSLASH
-&mt LS(LG(S)) ESCAPE  &tog 1          &mt LC(HOME) LC(END)  &mt LG(V) LS(LC(V))  &mt LS(LC(SPACE)) SPACE  &mt ENTER LS(ENTER)    &to 3         &kp DEL      &kp BACKSPACE  &mt ESCAPE LS(LG(S))  &mt RIGHT_GUI RG(L)  &tog 2
+&mt UP_ARROW LBKT        &mt F1 N1       &mt F2 N2       &mt LS(F3) N3        &mt F4 N4                &mt F5 N5              &kp UP_ARROW  &mt F6 N6    &mt F7 N7      &mt F8 N8             &mt F9 N9        &mt F10 N0          &kp EQUAL
+&mt LEFT RBKT            &kp Q           &kp W           &kp E                &mt LC(H) R              &mt TAB T              &kp DOWN      &mt LC(Y) Y  &kp U          &kp I                 &kp O            &kp P               &mt LC(LS(MINUS)) MINUS
+&mt RIGHT LC(BACKSPACE)  &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LEFT_SHIFT D     &mt LCTRL F              &kp G                  &kp LEFT      &kp H        &mt RCTRL J    &mt LEFT_SHIFT K      &mt RIGHT_ALT L  &mt RIGHT_GUI SEMI  &kp APOSTROPHE
+&mt DOWN LC(DEL)         &mt LC(Z) Z     &mt LC(X) X     &mt LC(C) C          &mt LC(V) V              &mt BACKSPACE B        &kp RIGHT     &kp N        &kp M          &kp COMMA             &kp DOT          &kp FSLH            &kp BACKSLASH
+&mt LS(LG(S)) ESCAPE     &kp LA(ENTER)   &mo 1           &mt LG(V) LS(LC(V))  &mt LS(LC(SPACE)) SPACE  &mt ENTER LS(ENTER)    &to 3         &kp DEL      &kp BACKSPACE  &mt ESCAPE LS(LG(S))  &mo 2            &mt LGUI LG(L)
             >;
 
             sensor-bindings = <&inc_dec_kp TAB LS(TAB)>;
