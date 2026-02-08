@@ -27,7 +27,7 @@ layers:
   - O
   - P
   - {t: '-', h: Ctl+Sft+-, s: _}
-  - {t: '$$mdi:backspace$$', h: '$$mdi:arrow-right-bold$$'}
+  - {t: 'Ctl+$$mdi:backspace$$', h: '$$mdi:arrow-right-bold$$'}
   - {t: A, h: '$$mdi:apple-keyboard-command$$'}
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
   - {t: D, h: '$$mdi:apple-keyboard-shift$$'}
@@ -40,7 +40,7 @@ layers:
   - {t: L, h: '$$mdi:apple-keyboard-option$$'}
   - {t: ;, h: RIGHT GUI, s: ':'}
   - {t: '''', s: '"'}
-  - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:arrow-down-bold$$'}
+  - {t: 'Ctl+$$mdi:backspace-reverse-outline$$', h: '$$mdi:arrow-down-bold$$'}
   - {t: Z, h: Ctl+Z}
   - {t: X, h: Ctl+X}
   - {t: C, h: Ctl+C}
@@ -54,8 +54,8 @@ layers:
   - {t: /, s: '?'}
   - {t: \, s: '|'}
   - {t: '$$mdi:keyboard-esc$$', h: Sft+Gui+S}
-  - {t: LAYER1, h: toggle}
-  - {t: Ctl+END, h: Ctl+HOME}
+  - {t: 'Alt+$$mdi:keyboard-return$$', type: enter}
+  - LAYER1
   - {t: Sft+Ctl+V, h: V}
   - {t: '$$mdi:keyboard-space$$', h: 'Sft+Ctl+$$mdi:keyboard-space$$'}
   - {t: 'Sft+$$mdi:keyboard-return$$', h: '$$mdi:keyboard-return$$'}
@@ -63,8 +63,8 @@ layers:
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: Sft+Gui+S, h: '$$mdi:keyboard-esc$$'}
-  - {t: Gui+L, h: RIGHT GUI}
-  - {t: LAYER2, h: toggle}
+  - LAYER2
+  - {t: Gui+L, h: LGUI}
   LAYER1:
   - {t: '`', s: '~'}
   - F1
@@ -120,7 +120,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: LAYER0, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:backspace$$', type: backspace}
@@ -193,7 +193,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   LAYER3:
   - {t: '[', s: '{'}
