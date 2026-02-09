@@ -54,17 +54,17 @@ layers:
   - {t: /, s: '?'}
   - {t: \, s: '|'}
   - {t: '$$mdi:keyboard-esc$$', h: Sft+Gui+S}
-  - {t: 'Alt+$$mdi:keyboard-return$$', type: enter}
+  - {t: '$$mdi:keyboard-return$$', h: 'Alt+$$mdi:keyboard-return$$'}
   - LAYER1
   - {t: Sft+Ctl+V, h: V}
   - {t: '$$mdi:keyboard-space$$', h: 'Sft+Ctl+$$mdi:keyboard-space$$'}
   - {t: 'Sft+$$mdi:keyboard-return$$', h: '$$mdi:keyboard-return$$'}
   - {t: LAYER3, h: toggle}
   - $$mdi:backspace-reverse-outline$$
+  - {t: '$$mdi:keyboard-space$$', h: 'Sft+Ctl+$$mdi:keyboard-space$$'}
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: Sft+Gui+S, h: '$$mdi:keyboard-esc$$'}
   - LAYER2
-  - {t: Gui+L, h: LGUI}
+  - Gui+L
   LAYER1:
   - {t: '`', s: '~'}
   - F1
@@ -270,3 +270,5 @@ combos:
   k: {t: LAYER2, h: toggle}
 - p: [56, 60]
   k: {t: LAYER0, h: toggle}
+- p: [63, 51]
+  k: '&unlock_work'
