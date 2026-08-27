@@ -65,6 +65,41 @@
             bindings = <&unlock_work>;
             key-positions = <63 51>;
         };
+
+        BT_0 {
+            bindings = <&bt BT_SEL 0>;
+            key-positions = <44 11 18>;
+        };
+
+        BT_1 {
+            bindings = <&bt BT_SEL 1>;
+            key-positions = <44 1 18>;
+        };
+
+        BT_2 {
+            bindings = <&bt BT_SEL 2>;
+            key-positions = <44 2 18>;
+        };
+
+        BT_CLEAR {
+            bindings = <&bt BT_CLR>;
+            key-positions = <44 18 59>;
+        };
+
+        work_email {
+            bindings = <&work_email>;
+            key-positions = <2 16>;
+        };
+
+        work_phone_number {
+            bindings = <&work_phone_number>;
+            key-positions = <24 3>;
+        };
+
+        select_copy_queue_replace {
+            bindings = <&select_copy_queue_replace>;
+            key-positions = <28 17>;
+        };
     };
 
     macros {
@@ -75,6 +110,36 @@
 
             label = "UNLOCK_WORK";
             tap-ms = <50>;
+        };
+
+        work_phone_number: Phn_Num {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp KP_NUMBER_0 &kp KP_NUMBER_8 &kp SPACE &kp KP_NUMBER_9 &kp KP_NUMBER_2 &kp KP_NUMBER_6 &kp KP_NUMBER_2 &kp SPACE &kp KP_NUMBER_1 &kp KP_NUMBER_2 &kp KP_NUMBER_7 &kp KP_NUMBER_9>;
+
+            label = "PHN_NUM";
+        };
+
+        work_email: work_email {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp LS(K) &kp A &kp L &kp L &kp A &kp N &kp DOT &kp LS(S) &kp C &kp R &kp O &kp O &kp P &kp AT &kp D &kp T &kp F &kp DOT &kp W &kp A &kp DOT &kp G &kp O &kp V &kp DOT &kp A &kp U>;
+
+            label = "WORK_EMAIL";
+        };
+
+        select_copy_queue_replace: select_copy_queue_replace {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp LC(LEFT) &kp LS(LC(RIGHT)) &kp LS(LEFT_ARROW) &kp LC(C) &kp LC(H) &kp LC(V)>;
+
+            label = "SELECT_COPY_QUEUE_REPLACE";
         };
     };
 
