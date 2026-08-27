@@ -272,3 +272,17 @@ combos:
   k: {t: LAYER0, h: toggle}
 - p: [63, 51]
   k: '&unlock_work'
+- p: [44, 11, 18]
+  k: {h: '1', s: '$$mdi:bluetooth-connect$$'}
+- p: [44, 1, 18]
+  k: {h: '2', s: '$$mdi:bluetooth-connect$$'}
+- p: [44, 2, 18]
+  k: {h: '3', s: '$$mdi:bluetooth-connect$$'}
+- p: [44, 18, 59]
+  k: $$mdi:bluetooth-off$$
+- p: [2, 16]
+  k: '&work_email'
+- p: [24, 3]
+  k: '&work_phone_number'
+- p: [28, 17]
+  k: '&select_copy_queue_replace'
